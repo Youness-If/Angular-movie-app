@@ -1,0 +1,26 @@
+.navbar .navbar-brand
+{
+    color: #E50914;
+    font-weight: bold;
+    font-size: 2em;
+    border: 2px solid #701107;
+}
+
+.navbar-nav .nav-item .nav-link
+{
+    color: #E50914;
+}
+
+.navbar {
+    background-color: white;
+    border-color: black;
+  }
+  
+  .user-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    animation: fadeIn 0.5s;
+    align-self: center;
+    color: #E50914;
+    margin-top: 28px;
+  }

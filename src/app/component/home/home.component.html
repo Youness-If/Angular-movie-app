@@ -1,0 +1,36 @@
+<br><br><br><br><br>
+<h4>Trending movies</h4>
+<div class="contain mt-3 mb-5 p-4">
+  
+<!-- trending movies  -->
+    <div class="row">
+      <div class="rowposter mt-3 p-2">
+          <ng-container *ngFor="let t of trendingMovieResult">
+              <img src="https://image.tmdb.org/t/p/original/{{ t.poster_path }}" class="rowimg largeposter" alt="..." [routerLink]="['/movie',t.id]">
+              <div class="info">
+                  <div class="name">{{ t.name }}</div>
+                  <div class="rating">{{ t.rating }}</div>
+              </div>
+          </ng-container>
+      </div>
+  </div>
+
+  <div class="row mt-4">
+      
+    <div class="rowposter mt-3 p-2">
+      <ng-container *ngFor="let d of documentaryMovieResult">
+        <img src="https://image.tmdb.org/t/p/original/{{ d.poster_path }}" class="rowimg largeposter" alt="..."
+          [routerLink]="['/movie',d.id]">
+          <div class="info">
+            <div class="name">{{ d.name }}</div>
+            <div class="rating">{{ d.rating }}</div>
+        </div>
+      </ng-container>
+
+    </div>
+
+  </div>
+
+
+
+    
